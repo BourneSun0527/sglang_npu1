@@ -36,6 +36,8 @@ class TestAscend_TP1_BF16(CustomTestCase):
             0.8,
             "--attention-backend",
             "ascend",
+            "--disable-radix-cache",
+            "--disable-cuda-graph",
         ]
 
     def test_a_gsm8k(self):
